@@ -1,17 +1,8 @@
 ---
-Title: Home
-Description: This is our index page.
+Title: Hem
+Description: Det här är index
 ---
 
-Home page
+Hem
 ==========================
-![bild](https://avatars.githubusercontent.com/u/116902856?v=4)
-
-The source for this page is in `content/index.md`.
-
-Hej och välkommen.
-
-Den här sidan är en del av kursen Teknisk webbdesign och användbarhet.
-
-Om mig:
-Elev på kursen Teknisk webbdesign och användbarhet.
+Den här sidan är en del av kursen Teknisk webbdesign och användbarhet. Sidan används för att testa verktyg och teknologier som används för att skapa fina och användbara hemsidor.

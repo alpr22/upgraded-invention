@@ -1,0 +1,22 @@
+{% include 'incl/header.twig' %}
+    <body>
+    {% include 'incl/nav.twig' %}
+        <div class="main-technology" role="main">
+            <div class="flexcontainer">
+                <div class="flexboxside">
+                        <a href= "css"><div class = "element">CSS</div></a>
+                        <a href= "html"><div class = "element">HTML</div></a>
+                        <a href= "javascript"><div class = "element">JavaScript</div></a>
+                        <a href= "php"><div class = "element">PHP</div></a>
+                        <a href= "python"><div class = "element">Python</div></a>
+                        <a href= "git"><div class = "element">Git</div></a>
+                        <a href= "sqlite"><div class = "element">SQLite</div></a>
+                </div>
+            <div class="flexboxmain">
+                {{ content }}
+            </div>
+        </div>
+    </div>
+    {% include 'incl/footer.twig' %}
+    </body>
+</html>

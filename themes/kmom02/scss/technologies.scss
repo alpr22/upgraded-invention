@@ -1,0 +1,51 @@
+.main-technologies {
+    flex: 1 0 auto;
+    margin-left: 4em;
+    margin-right: 4em;
+}
+
+.grid-container {
+    display: grid;
+}
+
+.grid-container h1 {
+    grid-column: span 3;
+    justify-self: center;
+}
+
+.box1 {
+    border: 1px solid;
+    text-align: center;
+    margin: 1em;
+    padding: 2em;
+}
+
+.box2 {
+    grid-column: span 2;
+    border: 1px solid;
+    text-align: center;
+    margin: 1em;
+    padding: 2em;
+}
+
+.box3 {
+    grid-column: span 3;
+    border: 1px solid;
+    text-align: center;
+    margin: 1em;
+    padding: 2em;
+}
+
+@media (max-width: 767px) {
+    .grid-container h1 {
+        grid-column: span 1;
+    }
+
+    .box2 {
+        grid-column: span 1;
+    }
+
+    .box3 {
+        grid-column: span 1;
+    }
+}

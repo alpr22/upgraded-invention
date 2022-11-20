@@ -1,8 +1,13 @@
 @import '../../node_modules/normalize.css/normalize';
 @import 'variables';
-@import 'typography';
 @import 'blockquotes';
 @import 'code';
+@import 'typography';
+@import 'mobile-menu';
+@import 'technology';
+@import 'technologies';
+
+
 
 body {
     background-color: $background-color;
@@ -10,4 +15,106 @@ body {
 
 * {
     color: $font-color;
+}
+
+* {
+    box-sizing: border-box;
+    border: 0 none;
+    margin: 0;
+    padding: 0;
+}
+
+ol,
+ul {
+    padding-left: 1.5em;
+}
+
+.hidden {
+    display: none !important;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+/* Placement */
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1 0 auto;
+    padding: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+}
+
+.header,
+.footer {
+    flex: 0 0 auto;
+}
+
+/* Header */
+
+.header,
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+/* Title */
+
+.title,
+.logo {
+    padding: 3em 3em 3em 0;
+}
+
+@media (max-width: 767px) {
+    .title,
+    .logo {
+        padding: 1em 1em 1em 0;
+    }
+
+    .title {
+        min-width: 50%;
+    }
+
+    .logo {
+        max-width: 30%;
+    }
+
+    body {
+        margin: 0;
+    }
+
+}
+
+.title * {
+    color: #111;
+}
+
+.title p {
+    font-style: italic;
+}
+
+/* Footer */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #222;
+}
+
+.footer a {
+    color: #222;
+}
+
+.footer .social {
+    font-size: 2rem;
 }

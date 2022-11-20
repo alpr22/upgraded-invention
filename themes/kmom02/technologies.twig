@@ -1,0 +1,18 @@
+{% include 'incl/header.twig' %}
+    <body>
+        {% include 'incl/nav.twig' %}
+        <div class="main-technologies" role="main">
+            <div class = grid-container>
+            {{ content }}
+            <a href= "technology/css" class="box1"><h2>CSS</h2></a>
+            <a href= "technology/html" class="box2"><h2>HTML</h2></a>
+            <a href= "technology/javascript" class="box2"><h2>JavaScript</h2></a>
+            <a href= "technology/php" class="box1"><h2>PHP</h2></a>
+            <a href= "technology/python" class="box3"><h2>Python</h2></a>
+            <a href= "technology/git" class="box1"><h2>Git</h2></a>
+            <a href= "technology/sqlite" class="box2"><h2>SQLite</h2></a>
+            </div>
+        </div>
+        {% include 'incl/footer.twig' %}
+    </body>
+</html>

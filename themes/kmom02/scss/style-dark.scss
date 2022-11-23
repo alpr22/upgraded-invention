@@ -8,11 +8,11 @@
 @import 'technologies';
 
 body {
-    background-color: $background-color;
+    background-color: $background-alternative-color;
 }
 
 * {
-    color: $font-color;
+    color: $font-alternative-color;
 }
 
 * {

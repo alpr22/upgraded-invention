@@ -1,0 +1,14 @@
+{% include 'incl/header.twig' %}
+    <body>
+        {% include 'incl/nav.twig' %}
+        <div class="main-technologies" role="main">
+            <div class = grid-container>
+            {{ content }}
+            <a href= "analysis/01_colors" class="box1"><h2>Färg</h2></a>
+            <a href= "analysis/02_load" class="box2"><h2>Last</h2></a>
+            <a href= "analysis/03_design_principles" class="box3"><h2>Designprinciper</h2></a>
+            </div>
+        </div>
+        {% include 'incl/footer.twig' %}
+    </body>
+</html>

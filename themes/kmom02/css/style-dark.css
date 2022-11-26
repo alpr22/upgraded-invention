@@ -496,6 +496,19 @@ html {
     grid-column: span 1;
   }
 }
+.main-report {
+  flex: 1 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+  max-width: 1600px;
+}
+
+.main-report h1, h2, h3 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
 body {
   background-color: rgb(24, 24, 24);
 }

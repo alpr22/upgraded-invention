@@ -1,0 +1,18 @@
+{% include 'incl/header.twig' %}
+    <body>
+    {% include 'incl/nav.twig' %}
+        <div class="main-report" role="main">
+            <div class="flexcontainer">
+                <div class="flexboxside">
+                        <a href= "01_colors"><div class = "element">Färg</div></a>
+                        <a href= "02_load"><div class = "element">Last</div></a>
+                        <a href= "03_design_principles"><div class = "element">Designprinciper</div></a>
+                </div>
+            <div class="flexboxmain">
+                {{ content }}
+            </div>
+        </div>
+    </div>
+    {% include 'incl/footer.twig' %}
+    </body>
+</html>

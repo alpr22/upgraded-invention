@@ -7,6 +7,7 @@
 @import 'technology';
 @import 'technologies';
 @import 'report';
+@import 'img';
 
 body {
     background-color: $background-alternative-color;
@@ -37,8 +38,6 @@ body {
     height: 100%;
 }
 
-/* Placement */
-
 body {
     display: flex;
     flex-direction: column;
@@ -57,61 +56,46 @@ body {
     flex: 0 0 auto;
 }
 
-/* Header */
-
 .header,
 .site-header {
     display: flex;
     justify-content: space-between;
-    margin-left: 2em;
-    margin-right: 2em;
+    padding: 2em;
 }
 
-/* Title */
-
-.title,
-.logo {
-    padding: 3em 3em 3em 0;
+.nav {
+    margin-top: 0.2em;
 }
 
 .nav a {
     color: $font-alternative-color;
+    padding: 1rem;
+    margin: 0.2em;
+    text-decoration: none;
+    border: 1px solid $font-alternative-color;
+}
+
+.nav a:hover {
+    background-color: $code-bg-alt;
+}
+
+.nav .active a {
+    background-color: $code-bg-alt;
 }
 
 @media (max-width: 767px) {
-    .title,
-    .logo {
-        padding: 1em 1em 1em 0;
-    }
-
-    .title {
-        min-width: 50%;
-    }
-
-    .logo {
-        max-width: 30%;
-    }
-
     body {
         margin: 0;
     }
-
 }
 
 .title * {
     color: $font-alternative-color;
 }
 
-.title p {
-    font-style: italic;
-}
-
-/* Footer */
-
 .footer {
     display: flex;
     justify-content: space-between;
-    border-top: 1px solid $font-color;
     background-color: $code-bg-alt;
 }
 
